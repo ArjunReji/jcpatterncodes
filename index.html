@@ -25,7 +25,8 @@
   <h1>JavaScript Pattern Codes</h1>
   <div class="contain">
     <div>
-      <select name="" id="selection" style="padding: 5px; font-size: medium; width: 200px; border-radius: 3px; text-align: center; margin: 10px;">
+      <select name="" id="selection"
+        style="padding: 5px; font-size: medium; width: 200px; border-radius: 3px; text-align: center; margin: 10px;">
         <option value="pattern1">pattern1</option>
         <option value="pattern2">pattern2</option>
         <option value="pattern3">pattern3</option>
@@ -463,12 +464,12 @@
       else if (scriptName === 'pattern2') {
         code.innerHTML = `
          <code><pre>
-        for (let i = 1; i <= 5; i++) {
-          let str = '';
-          for (let j = 1; j <= i; j++) {
-            str = str + i + ' ';
+      for (let i = 1; i <= 5;i++){
+        let str = '';
+        for (let j = 1; j <= i;j++){
+          str = str + i + ' ';
           }
-          console.log(str);
+        console.log(str);
       }
       </code></pre>`
       }
@@ -476,9 +477,9 @@
         code.innerHTML = `
         <code><pre>
         let k = 1;
-        for (let i = 1; i <= 4; i++) {
+        for (let i = 1; i <= 4;i++){
           let str = '';
-          for (let j = 1; j <= i; j++) {
+          for (let j = 1; j <= i;j++){
             str = str + k + " ";
             k++;
           }
@@ -493,7 +494,7 @@
         <code><pre>
         for (let i = 1; i <= 5; i++) {
           let str = '';
-          for (let j = 1; j <= 6 - i; j++) {
+          for(let j = 1; j <= 6 - i;j++){
             str = str + j + ' ';
           }
           console.log(str);
@@ -507,10 +508,10 @@
         <code><pre>
         for (let i = 1; i <= 5; i++) {
           let str = '';
-          for (let j = 1; j <= 6 - i; j++) {
+          for(let j = 1; j <= 6 - i;j++){
             str = str + " ";
           }
-          for (let j = 1; j <= 2 * i - 1; j++) {
+          for(let j=1;j<=2*i-1;j++){
             str = str + j;
           }
           console.log(str);
@@ -524,10 +525,10 @@
         let k = 1;
         for (let i = 1; i <= 3; i++) {
           let str = '';
-          for (let j = 1; j <= 4 - i; j++) {
+          for(let j = 1; j <= 4 - i;j++){
             str = str + ' ';
           }
-          for (let j = 1; j <= 2 * i - 1; j++) {
+          for (let j = 1;j<=2*i-1;j++){
             str = str + k;
             k++;
           }
@@ -555,7 +556,7 @@
         for (let i = 1; i <= 5; i++) {
           let str = '';
           for (let j = 1; j <= 5; j++) {
-            if (i === 1 || i === 5 || j === 1 || j === 5) {
+            if(i===1||i===5||j===1||j===5){
               str = str + " *";
             }
             else {
@@ -590,7 +591,7 @@
         <code><pre>
         for (let i = 1; i <= 5; i++) {
           str = '';
-          for (let j = 1; j <= i; j++) {
+          for (let j = 1; j <= i; j++){
             str = str + "*";
           }
           console.log(str);
@@ -602,10 +603,10 @@
         <code><pre>
         for (let i = 1; i <= 5; i++) {
           let str = '';
-          for (let j = 1; j <= 5 - i; j++) {
+          for (let j = 1;j<=5-i;j++){
             str = str + " ";
           }
-          for (let j = 1; j <= 2 * i - 1; j++) {
+          for (let j = 1;j<=2*i-1;j++){
             str = str + "*";
           }
           console.log(str);
@@ -617,7 +618,7 @@
         <code><pre>
         for (let i = 1; i <= 5; i++) {
           let str = '';
-          for (let j = 1; j <= 6 - i; j++) {
+          for (let j = 1;j<=6-i;j++) {
             str = str + (6 - j);
           }
           console.log(str);
@@ -629,7 +630,7 @@
         <code><pre>
         for (let i = 1; i <= 5; i++) {
           let str = '';
-          for (let j = 6 - i; j >= 1; j--) {
+          for (let j = 6 - i;j>=1;j--){
             str = str + j;
           }
           console.log(str);
@@ -642,7 +643,7 @@
          for (let i = 1; i <= 6; i++) {
           let str = '';
           for (let j = 1; j <= i; j++) {
-            if (j === i || i === 6 || j === 1) {
+            if (j===i||i===6||j===1) {
               str = str + "*";
             }
             else {
@@ -658,7 +659,7 @@
         <code><pre>
          for (let i = 1; i <= 5; i++) {
           let str = '';
-          for (let j = 1; j <= 6 - i; j++) {
+          for (let j = 1;j<=6-i;j++) {
             str = str + "*"
           }
           console.log(str);
@@ -689,7 +690,7 @@
         }
           for (let i = 1; i <= 5; i++) {
           let str = '';
-          for (let j = 1; j <= 6 - i; j++) {
+          for (let j=1;j<=6-i;j++) {
             str = str + '*';
           }
           console.log(str);
@@ -702,10 +703,10 @@
         <code><pre>
           for (let i = 1; i < 5; i++) {
           let str = '';
-          for (let j = 1; j < 6 - i; j++) {
+          for (let j = 1;j<6-i;j++) {
             str = str + " ";
           }
-          for (let j = 1; j <= 2 * i - 1; j++) {
+          for (let j = 1;j<=2*i-1;j++){
             str = str + "*";
           }
           console.log(str);
@@ -713,10 +714,10 @@
 
         for (let i = 1; i <= 5; i++) {
           let str = '';
-          for (let j = 1; j < i; j++) {
+          for (let j = 1;j<i;j++) {
             str = str + " ";
           }
-          for (let j = 2 * 5 - 1; j >= 2 * i - 1; j--) {
+          for(let j=2*5-1;j>=2*i-1;j--){
             str = str + "*";
           }
           console.log(str);
@@ -730,7 +731,7 @@
          for (let i = 1; i <= 5; i++) {
           let str = '';
           for (let j = 1; j <= 5; j++) {
-            if (i === j || i + j === 6) {
+            if (i===j || i+j===6) {
               str = str + "*";
             }
             else {
@@ -746,12 +747,12 @@
       else if (scriptName === 'pattern20') {
         code.innerHTML = `
         <code><pre>
-         for (let i = 1; i <= 5; i++) {
+         for (let i = 1; i<=5; i++) {
           let str = '';
           for (let j = 1; j <= i; j++) {
             str = str + ' ';
           }
-          for (let j = 2 * 5 - 1; j >= 2 * i - 1; j--) {
+          for (let j=2*5-1;j>=2*i-1;j--){
             str = str + "*";
           }
           console.log(str);
@@ -764,10 +765,10 @@
         <code><pre>
          for (let i = 1; i <= 5; i++) {
           let str = '';
-          for (let j = 1; j <= 6 - i; j++) {
+          for (let j = 1; j <= 6-i;j++){
             str = str + ' ';
           }
-          for (let j = 1; j <= i; j++) {
+          for (let j = 1; j <= i; j++){
             str = str + '* '
           }
           console.log(str);
@@ -778,22 +779,22 @@
       else if (scriptName === 'pattern22') {
         code.innerHTML = `
         <code><pre>
-         for (let i = 1; i <= 5; i++) {
-          let str1 = "", str2 = "", ch = 65;
-          for (let j = 1; j <= 5 - i; j++) {
-            str1 = str1 + "  ";
-          }
-          for (let j = 1; j <= i; j++) {
-            str1 = str1 + " *";
+      for (let i = 1; i <= 5; i++) {
+      let str1 = "", str2 = "", ch = 65;
+        for (let j = 1; j <= 5-i;j++){
+          str1 = str1 + "  ";
+         }
+        for (let j = 1; j <= i; j++) {
+          str1 = str1 + " *";
           }
 
-          for (let j = 1; j <= i; j++) {
-            str2 = str2 + " " + String.fromCharCode(ch);
-            ch++;
+        for (let j = 1; j <= i; j++) {
+      str2=str2+" "+String.fromCharCode(ch);
+          ch++;
           }
-          console.log(str1);
-          console.log(str2);
-        }
+        console.log(str1);
+        console.log(str2);
+      }
         </code></pre>
         `
       }
