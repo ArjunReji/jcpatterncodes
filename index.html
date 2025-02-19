@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Sigmar&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Sigmar&display=swap"
+    rel="stylesheet">
+  <title>Patterns</title>
+</head>
+
+<body>
+  <h1>JavaScript Pattern Codes</h1>
+  <div class="contain">
+    <div>
+      <select name="" id="selection" style="padding: 5px; font-size: medium; width: 200px; border-radius: 3px; text-align: center; margin: 10px;">
+        <option value="pattern1">pattern1</option>
+        <option value="pattern2">pattern2</option>
+        <option value="pattern3">pattern3</option>
+        <option value="pattern4">pattern4</option>
+        <option value="pattern5">pattern5</option>
+        <option value="pattern6">pattern6</option>
+        <option value="pattern7">pattern7</option>
+        <option value="pattern8">pattern8</option>
+        <option value="pattern9">pattern9</option>
+        <option value="pattern10">pattern10</option>
+        <option value="pattern11">pattern11</option>
+        <option value="pattern12">pattern12</option>
+        <option value="pattern13">pattern13</option>
+        <option value="pattern14">pattern14</option>
+        <option value="pattern15">pattern15</option>
+        <option value="pattern16">pattern16</option>
+        <option value="pattern17">pattern17</option>
+        <option value="pattern18">pattern18</option>
+        <option value="pattern19">pattern19</option>
+        <option value="pattern20">pattern20</option>
+        <option value="pattern21">pattern21</option>
+        <option value="pattern22">pattern22</option>
+      </select>
+      <div class="buttons">
+        <button onclick="pattern(selection.value)">Click for Pattern</button>
+        <button onclick="patternCode(selection.value)">click to show code</button>
+      </div>
+
+    </div>
+    <div>
+      <h5>pattern</h6>
+        <div id="demo"></div>
+        <h5>code</h6>
+          <div id="code"></div>
+    </div>
+
+  </div>
+
+  <script>
+    function pattern(scriptName) {
+      if (scriptName === 'pattern1') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= i; j++) {
+            str = str + j + ' ';
+          }
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+      }
+      else if (scriptName === 'pattern2') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= i; j++) {
+            str = str + i + ' ';
+          }
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+      }
+      else if (scriptName === 'pattern3') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        let k = 1;
+        for (let i = 1; i <= 4; i++) {
+          let str = '';
+          for (let j = 1; j <= i; j++) {
+            str = str + k + " ";
+            k++;
+          }
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+
+      }
+      else if (scriptName === 'pattern4') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 6 - i; j++) {
+            str = str + j + ' ';
+          }
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+
+      }
+      else if (scriptName === 'pattern5') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 6 - i; j++) {
+            str = str + " ";
+          }
+          for (let j = 1; j <= 2 * i - 1; j++) {
+            str = str + j;
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+
+      }
+      else if (scriptName === 'pattern6') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        let k = 1;
+        for (let i = 1; i <= 3; i++) {
+          let str = '';
+          for (let j = 1; j <= 4 - i; j++) {
+            str = str + ' ';
+          }
+          for (let j = 1; j <= 2 * i - 1; j++) {
+            str = str + k;
+            k++;
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+
+      }
+      else if (scriptName === 'pattern7') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 5; j++) {
+            str = str + ' *';
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+
+      }
+      else if (scriptName === 'pattern8') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 5; j++) {
+            if (i === 1 || i === 5 || j === 1 || j === 5) {
+              str = str + " *";
+            }
+            else {
+              str = str + "  ";
+            }
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+
+      }
+      else if (scriptName === 'pattern9') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 5; j++) {
+            if (j + i >= 6) {
+              str = str + '*';
+            }
+            else {
+              str = str + ' ';
+            }
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+
+      }
+
+      else if (scriptName === 'pattern10') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 5; i++) {
+          str = '';
+          for (let j = 1; j <= i; j++) {
+            str = str + "*";
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+
+      }
+
+      else if (scriptName === 'pattern11') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 5 - i; j++) {
+            str = str + " ";
+          }
+          for (let j = 1; j <= 2 * i - 1; j++) {
+            str = str + "*";
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+
+      }
+
+      else if (scriptName === 'pattern12') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 6 - i; j++) {
+            str = str + (6 - j);
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+
+      }
+
+      else if (scriptName === 'pattern13') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 6 - i; j >= 1; j--) {
+            str = str + j;
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+
+      }
+
+      else if (scriptName === 'pattern14') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 6; i++) {
+          let str = '';
+          for (let j = 1; j <= i; j++) {
+            if (j === i || i === 6 || j === 1) {
+              str = str + "*";
+            }
+            else {
+              str = str + ' ';
+            }
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+
+      }
+
+      else if (scriptName === 'pattern15') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 6 - i; j++) {
+            str = str + "*"
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+
+      }
+      else if (scriptName === 'pattern16') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= i; j++) {
+            str = str + "A";
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+
+      }
+      else if (scriptName === 'pattern17') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 4; i++) {
+          let str = '';
+          for (let j = 1; j <= i; j++) {
+            str = str + '*';
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`
+        }
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 6 - i; j++) {
+            str = str + '*';
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+      }
+
+      else if (scriptName === 'pattern18') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i < 5; i++) {
+          let str = '';
+          for (let j = 1; j < 6 - i; j++) {
+            str = str + " ";
+          }
+          for (let j = 1; j <= 2 * i - 1; j++) {
+            str = str + "*";
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j < i; j++) {
+            str = str + " ";
+          }
+          for (let j = 2 * 5 - 1; j >= 2 * i - 1; j--) {
+            str = str + "*";
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+      }
+      else if (scriptName === 'pattern19') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 5; j++) {
+            if (i === j || i + j === 6) {
+              str = str + "*";
+            }
+            else {
+              str = str + " ";
+            }
+
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+      }
+      else if (scriptName === 'pattern20') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= i; j++) {
+            str = str + ' ';
+          }
+          for (let j = 2 * 5 - 1; j >= 2 * i - 1; j--) {
+            str = str + "*";
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+      }
+      else if (scriptName === 'pattern21') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 6 - i; j++) {
+            str = str + ' ';
+          }
+          for (let j = 1; j <= i; j++) {
+            str = str + '* '
+          }
+          console.log(str);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str}</pre>`;
+        }
+      }
+
+      else if (scriptName === 'pattern22') {
+        let pattern = document.getElementById("demo");
+        pattern.innerHTML = "";
+        code.innerHTML = "";
+        for (let i = 1; i <= 5; i++) {
+          let str1 = "", str2 = "", ch = 65;
+          for (let j = 1; j <= 5 - i; j++) {
+            str1 = str1 + "  ";
+          }
+          for (let j = 1; j <= i; j++) {
+            str1 = str1 + " *";
+          }
+
+          for (let j = 1; j <= i; j++) {
+            str2 = str2 + " " + String.fromCharCode(ch);
+            ch++;
+          }
+          console.log(str1);
+          console.log(str2);
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str1}</pre>`;
+          pattern.innerHTML = `${pattern.innerHTML} <pre> ${str2}</pre>`;
+
+        }
+      }
+
+    }
+
+    function patternCode(scriptName) {
+      if (scriptName === 'pattern1') {
+        code.innerHTML = `
+      <pre><code>
+          for(let i=1;i<=5;i++){
+          let str='';
+            for(let j=1;j<=i;j++){
+              str=str+j+' ';
+            }
+          console.log(str);
+          }
+      </code></pre>`
+      }
+      else if (scriptName === 'pattern2') {
+        code.innerHTML = `
+         <code><pre>
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= i; j++) {
+            str = str + i + ' ';
+          }
+          console.log(str);
+      }
+      </code></pre>`
+      }
+      else if (scriptName === 'pattern3') {
+        code.innerHTML = `
+        <code><pre>
+        let k = 1;
+        for (let i = 1; i <= 4; i++) {
+          let str = '';
+          for (let j = 1; j <= i; j++) {
+            str = str + k + " ";
+            k++;
+          }
+          console.log(str);
+
+        }
+        </code></pre>
+        `
+      }
+      else if (scriptName === 'pattern4') {
+        code.innerHTML = `
+        <code><pre>
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 6 - i; j++) {
+            str = str + j + ' ';
+          }
+          console.log(str);
+
+        }
+        </code></pre>
+        `
+      }
+      else if (scriptName === 'pattern5') {
+        code.innerHTML = `
+        <code><pre>
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 6 - i; j++) {
+            str = str + " ";
+          }
+          for (let j = 1; j <= 2 * i - 1; j++) {
+            str = str + j;
+          }
+          console.log(str);
+        }
+        </code></pre>
+        `
+      }
+      else if (scriptName === 'pattern6') {
+        code.innerHTML = `
+        <code><pre>
+        let k = 1;
+        for (let i = 1; i <= 3; i++) {
+          let str = '';
+          for (let j = 1; j <= 4 - i; j++) {
+            str = str + ' ';
+          }
+          for (let j = 1; j <= 2 * i - 1; j++) {
+            str = str + k;
+            k++;
+          }
+          console.log(str);
+        </code></pre>
+        `
+      }
+
+      else if (scriptName === 'pattern7') {
+        code.innerHTML = `
+        <code><pre>
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 5; j++) {
+            str = str + ' *';
+          }
+          console.log(str);
+        </code></pre>
+        `
+      }
+
+      else if (scriptName === 'pattern8') {
+        code.innerHTML = `
+        <code><pre>
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 5; j++) {
+            if (i === 1 || i === 5 || j === 1 || j === 5) {
+              str = str + " *";
+            }
+            else {
+              str = str + "  ";
+            }
+          }
+          console.log(str);
+        </code></pre>
+        `
+      }
+
+      else if (scriptName === 'pattern9') {
+        code.innerHTML = `
+        <code><pre>
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 5; j++) {
+            if (j + i >= 6) {
+              str = str + '*';
+            }
+            else {
+              str = str + ' ';
+            }
+          }
+          console.log(str);
+        </code></pre>
+        `
+      }
+
+      else if (scriptName === 'pattern10') {
+        code.innerHTML = `
+        <code><pre>
+        for (let i = 1; i <= 5; i++) {
+          str = '';
+          for (let j = 1; j <= i; j++) {
+            str = str + "*";
+          }
+          console.log(str);
+        </code></pre>
+        `
+      }
+      else if (scriptName === 'pattern11') {
+        code.innerHTML = `
+        <code><pre>
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 5 - i; j++) {
+            str = str + " ";
+          }
+          for (let j = 1; j <= 2 * i - 1; j++) {
+            str = str + "*";
+          }
+          console.log(str);
+        </code></pre>
+        `
+      }
+      else if (scriptName === 'pattern12') {
+        code.innerHTML = `
+        <code><pre>
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 6 - i; j++) {
+            str = str + (6 - j);
+          }
+          console.log(str);
+        </code></pre>
+        `
+      }
+      else if (scriptName === 'pattern13') {
+        code.innerHTML = `
+        <code><pre>
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 6 - i; j >= 1; j--) {
+            str = str + j;
+          }
+          console.log(str);
+        </code></pre>
+        `
+      }
+      else if (scriptName === 'pattern14') {
+        code.innerHTML = `
+        <code><pre>
+         for (let i = 1; i <= 6; i++) {
+          let str = '';
+          for (let j = 1; j <= i; j++) {
+            if (j === i || i === 6 || j === 1) {
+              str = str + "*";
+            }
+            else {
+              str = str + ' ';
+            }
+          }
+          console.log(str);
+        </code></pre>
+        `
+      }
+      else if (scriptName === 'pattern15') {
+        code.innerHTML = `
+        <code><pre>
+         for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 6 - i; j++) {
+            str = str + "*"
+          }
+          console.log(str);
+        </code></pre>
+        `
+      }
+      else if (scriptName === 'pattern16') {
+        code.innerHTML = `
+        <code><pre>
+         for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= i; j++) {
+            str = str + "A";
+          }
+          console.log(str);
+        </code></pre>
+        `
+      }
+      else if (scriptName === 'pattern17') {
+        code.innerHTML = `
+        <code><pre>
+          for (let i = 1; i <= 4; i++) {
+          let str = '';
+          for (let j = 1; j <= i; j++) {
+            str = str + '*';
+          }
+          console.log(str);
+        }
+          for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 6 - i; j++) {
+            str = str + '*';
+          }
+          console.log(str);
+        }
+        </code></pre>
+        `
+      }
+      else if (scriptName === 'pattern18') {
+        code.innerHTML = `
+        <code><pre>
+          for (let i = 1; i < 5; i++) {
+          let str = '';
+          for (let j = 1; j < 6 - i; j++) {
+            str = str + " ";
+          }
+          for (let j = 1; j <= 2 * i - 1; j++) {
+            str = str + "*";
+          }
+          console.log(str);
+        }
+
+        for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j < i; j++) {
+            str = str + " ";
+          }
+          for (let j = 2 * 5 - 1; j >= 2 * i - 1; j--) {
+            str = str + "*";
+          }
+          console.log(str);
+        }
+        </code></pre>
+        `
+      }
+      else if (scriptName === 'pattern19') {
+        code.innerHTML = `
+        <code><pre>
+         for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 5; j++) {
+            if (i === j || i + j === 6) {
+              str = str + "*";
+            }
+            else {
+              str = str + " ";
+            }
+
+          }
+          console.log(str);
+        }
+        </code></pre>
+        `
+      }
+      else if (scriptName === 'pattern20') {
+        code.innerHTML = `
+        <code><pre>
+         for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= i; j++) {
+            str = str + ' ';
+          }
+          for (let j = 2 * 5 - 1; j >= 2 * i - 1; j--) {
+            str = str + "*";
+          }
+          console.log(str);
+        }
+        </code></pre>
+        `
+      }
+      else if (scriptName === 'pattern21') {
+        code.innerHTML = `
+        <code><pre>
+         for (let i = 1; i <= 5; i++) {
+          let str = '';
+          for (let j = 1; j <= 6 - i; j++) {
+            str = str + ' ';
+          }
+          for (let j = 1; j <= i; j++) {
+            str = str + '* '
+          }
+          console.log(str);
+        }
+        </code></pre>
+        `
+      }
+      else if (scriptName === 'pattern22') {
+        code.innerHTML = `
+        <code><pre>
+         for (let i = 1; i <= 5; i++) {
+          let str1 = "", str2 = "", ch = 65;
+          for (let j = 1; j <= 5 - i; j++) {
+            str1 = str1 + "  ";
+          }
+          for (let j = 1; j <= i; j++) {
+            str1 = str1 + " *";
+          }
+
+          for (let j = 1; j <= i; j++) {
+            str2 = str2 + " " + String.fromCharCode(ch);
+            ch++;
+          }
+          console.log(str1);
+          console.log(str2);
+        }
+        </code></pre>
+        `
+      }
+
+
+    }
+  </script>
+</body>
+
+</html>

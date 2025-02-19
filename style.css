@@ -1,0 +1,52 @@
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #36BA98;
+  font-family: "Permanent Marker", serif;
+  background: linear-gradient(45deg, #ff0080, #7928ca, #ff8c00, #1e3c72, #1e5392);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+.buttons button{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #F4A261;
+  color: black ;
+  font-family: "Montserrat", serif;
+  font-size: larger;
+}
+select{
+  font-family: "Montserrat", serif;
+}
+
+.contain{
+  width: 450px;
+  padding: 20px;
+  font-family: "Montserrat", serif;
+  border-radius: 5px;
+  background-color: #E9C46A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
